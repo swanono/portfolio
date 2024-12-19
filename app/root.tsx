@@ -1,11 +1,11 @@
-import * as React from "react";
+import * as React from 'react';
 import {
   Links,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
-} from "@remix-run/react";
+} from '@remix-run/react';
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -16,7 +16,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body style={{ backgroundColor: '#0e100f' }}>
         {children}
         <ScrollRestoration />
         <Scripts />
