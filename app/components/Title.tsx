@@ -3,19 +3,73 @@ import styled from 'styled-components';
 const Title = () => {
   return (
     <Container>
-      <MemojiContainer>
-        <img
-          src="memoji.png"
-          alt="Memoji"
-          style={{ width: '100%', height: '100%' }}
-        />
-      </MemojiContainer>
-      <Bubble>Hello, I'm Sacha</Bubble>
+      <LineContainer>
+        <MemojiContainer>
+          <img
+            src="memoji.png"
+            alt="Memoji"
+            style={{ width: '100%', height: '100%' }}
+          />
+        </MemojiContainer>
+        <Bubble>Hello, I'm Sacha</Bubble>
+      </LineContainer>
+
+      <LineContainer>
+        <h1>DIGITAL</h1>
+        <h3>
+          // Based in
+          <br />
+          Paris, France
+        </h3>
+      </LineContainer>
+
+      <LineContainer>
+        <h1>EXPERIENCE</h1>
+      </LineContainer>
+
+      <LineContainer>
+        <h1>DESIGNER</h1>
+        <button />
+      </LineContainer>
+
+      <LineContainer>
+        <h3>
+          // Full-Stack Developper
+          <br />
+          UX/UI Enthousiast
+        </h3>
+        <h1>
+          <span>&</span>DIGITAL
+        </h1>
+      </LineContainer>
     </Container>
   );
 };
 
 const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffe3;
+  font-family: 'Hanken';
+
+  h1 {
+    font-size: 6rem;
+    margin: 0.2rem 0px;
+    line-height: 1;
+  }
+
+  h3 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  span {
+    margin-right: 50px;
+  }
+`;
+
+const LineContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -23,11 +77,12 @@ const Container = styled.div`
 
 const MemojiContainer = styled.div`
   width: 80px;
+  max-width: 80px;
   height: 80px;
   border-radius: 50%;
   overflow: hidden;
-  border: 3px solid #fafafa;
-  background-color: #fafafa;
+  border: 3px solid #ffffe3;
+  background-color: #ffffe3;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 `;
 
